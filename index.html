@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Shilpa Portfolio</title>
+    <link rel="icon" href="./img/s.png" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#about">About</a>
@@ -30,6 +33,17 @@
             </li>
           </ul>
         </div>
+        <button
+          class="navbar-toggler mt-4"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </nav>
     <div class="container-fluid main-container">
@@ -53,7 +67,7 @@
               >Learn More</a
             >
           </div>
-          <div class="col-xl-7 col-lg-7 col-md-12 pr-0">
+          <div class="col-xl-7 col-lg-7 col-md-12">
             <div class="svg-image"></div>
           </div>
         </div>
@@ -141,62 +155,133 @@
           My Work
         </h2>
         <div class="row align-items-center">
-          <div
-            class="col-xl-4 col-lg-4 col-md-12"
-          >
-            <a href="https://repl.it/@shilpa3495/Quiz-how-well-know-me?embed=1&output=1#index.js">Quiz How wellyou know me</a>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <a
+              href="https://repl.it/@shilpa3495/Quiz-how-well-know-me?embed=1&output=1#index.js"
+              >Quiz How wellyou know me</a
+            >
             <p>
-              I developed the CLI app in Nodejs. I also
-              use the readline sync and chalk.
+              I developed the CLI app in Nodejs. I also use the readline sync
+              and chalk.
             </p>
+            <a
+              class="btn btn-primary align-content-center"
+              href="https://github.com/shilpa3495/Quiz-how-well-know-me"
+              role="button"
+              >View Source</a
+            >
           </div>
-          <div
-            class="col-xl-4 col-lg-4 col-md-12"
-          >
-          <a href="https://repl.it/@shilpa3495/fun-Quiz?embed=1&output=1#index.js">Fun Quiz</a>
-          <p>
-            I developed the CLI app in Nodejs with options. I also
-            use the readline sync and chalk.
-          </p>
-          </div>
-          <div
-            class="col-xl-4 col-lg-4 col-md-12"
-          >
-            <a href="#">Banana Translator</a>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <a
+              href="https://repl.it/@shilpa3495/fun-Quiz?embed=1&output=1#index.js"
+              >Fun Quiz</a
+            >
             <p>
-              In which I convert the english sentence into Banana langauge or minion talk.
-              I have used js, html, css. 
+              I developed the CLI app in Nodejs with options. I also use the
+              readline sync and chalk.
             </p>
+            <a
+              class="btn btn-primary align-content-center"
+              href="https://github.com/shilpa3495/fun-Quiz"
+              role="button"
+              >View Source</a
+            >
           </div>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <a href="https://banana-transletter.netlify.app/">Banana Translator</a>
+            <p>
+              In which I convert the english sentence into Banana language or
+              minion talk. I have used js, html, css.
+            </p>
+            <a
+              class="btn btn-primary align-content-center"
+              href="https://github.com/shilpa3495/Banana-Translator"
+              role="button"
+              >View Source</a
+            >
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <a href="https://sfi3v.csb.app/">Flag Interpreter</a>
+            <p>
+              In which I display the meaning of some flags. I have used react,
+              html, css.
+            </p>
+            <a
+              class="btn btn-primary align-content-center"
+              href="https://codesandbox.io/s/flag-interpreter-sfi3v"
+              role="button"
+              >View Source</a
+            >
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <a href="https://7rozq.csb.app/">Good Books</a>
+            <p>
+              In which I display the list of Books. I have used react, html,
+              css.
+            </p>
+            <a
+              class="btn btn-primary align-content-center"
+              href="https://codesandbox.io/s/restless-breeze-7rozq?file=/src/App.js"
+              role="button"
+              >View Source</a
+            >
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <a href="https://yoda-website.netlify.app/">Yoda</a>
+            <p>
+              In which I convert the english sentence into Yoda language. I have
+              used js, html, css.
+            </p>
+            <a
+              class="btn btn-primary align-content-center"
+              href="https://github.com/shilpa3495/Yoda"
+              role="button"
+              >View Source</a
+            >
         </div>
+      </div>
+
+      <!-- Blog section -->
+      <div class="section blog-section" id="blogs">
+        <span class="text-center d-block">Posts</span>
+        <h2 class="text-center">
+          My Blog
+        </h2>
         <div class="row align-items-center">
-            <div
-              class="col-xl-4 col-lg-4 col-md-12"
+          <div class="col-xl-4 col-lg-4 col-md-12">
+            <a
+              href="https://dev.to/shilpa3495/mostly-used-git-commands-for-beginners-3m37"
+              >Mostly used git commands for beginners</a
             >
-              <a href="https://sfi3v.csb.app/">Flag Interpreter</a>
-              <p>
-                In which I display the meaning of some flags.
-                I have used react, html, css. 
-              </p>
-            </div>
-            <div
-              class="col-xl-4 col-lg-4 col-md-12"
-            >
-            <a href="">Good Books</a>
             <p>
-                In which I display the list of Books.
-                I have used react, html, css. 
+              Git is a magic bullet for developers to track your work. Git also
+              differentiates the other teammate work by using git commands. Here
+              are the 10 most used git commands.
             </p>
-            </div>
-            <div
-              class="col-xl-4 col-lg-4 col-md-12"
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12">
+            <a href="https://dev.to/xenoxdev/-offline-codepen-and-jsfiddle-35f1"
+              >Offline Codepen and JSFiddle</a
             >
-              <a href="#">Yoda Translator</a>
-              <p>
-                In which I convert the english sentence into Yoda langauge.
-                I have used js, html, css. 
-              </p>
-            </div>
+            <p>
+              Check this out. Web-Maker is an offline playground for testing and
+              seeing the output of HTML, CSS and JavaScript code snippets. This
+              is much faster compared to Codepen because it runs completely
+              offline on your system.
+            </p>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12">
+            <a
+              href="https://dev.to/teamxenox/super-cool--tool-to-style-your--tweets-2jab"
+              >Super Cool 😎 Tool to Style Your 💙 Tweets</a
+            >
+            <p>
+              Hey, I recently found a cool website tweetfancy.io. It lets you
+              add styles to your tweets, and it's pretty straightforward as it
+              uses simple Markdown. If you wanna make your tweets stand out,
+              it's worth checking out!
+            </p>
+          </div>
         </div>
       </div>
 

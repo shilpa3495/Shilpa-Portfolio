@@ -19,6 +19,7 @@ body{
     padding:25px 0px;
     z-index: 5;
 }
+
 .navbar-light .navbar-nav .nav-link {
     color: #1d2127;
     padding-right: 30px;
@@ -38,12 +39,16 @@ body{
 .about-info h1, 
 .specialization-heading,
 .work-section h2,
+.blog-section h2,
 .contact-section h1
 {
     color:#523B5D;
     font-family: roboto-bold;
 }
-.about-info p,.work-section p{
+.about-info p,
+.work-section p, 
+.blog-section p
+{
     color:#adadad;
     font-size: 1em;
     line-height: 1.5;
@@ -55,13 +60,16 @@ body{
 .about-info .btn-primary{
     width: 241px;
     height: 65px;
-    background: #FB9301;
     border-radius: 20px;
     margin-top: 30px;
+    font-size: 1.2em;
+    font-family: 'roboto-bold';
+}
+.about-info .btn-primary, 
+.work-section .btn-primary{   
+    background: #FB9301;
     border-color: #FB9301;
     display: grid;
-    font-family: 'roboto-bold';
-    font-size: 1.2em;
 }
 .svg-image{
     background: url("/img/portfolio-svg1.svg");
@@ -73,7 +81,9 @@ body{
 
 /* specialization-text */
 .specialization-section span, 
-.work-section span{
+.work-section span,
+.blog-section span
+{
     color: #FB9301;
     font-size: 1em;
     font-family: 'roboto-bold';
@@ -100,13 +110,25 @@ body{
     padding-top:50px;
 } 
 /* work-section */
-.work-section h2{
+
+.work-section h2,
+.blog-section h2
+{
     padding-bottom: 75px;
 }
-.work-section a{
+.work-section a,
+.blog-section a
+{
     color:#1d2127;
     font-size: 1.2em;
+    cursor:pointer;
 }
+.work-section .btn-primary{
+    width:150px;
+    color:white;
+    margin-bottom: 30px;
+}
+
 /* contact-section */
 .linkedin-img, .github-img{
     width: 50px;
@@ -138,4 +160,61 @@ body{
 }
 .contact-section .row{
     height: 100vh;
+}
+
+@media (max-width: 991px) {
+    .container-fluid{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .navbar-toggler{
+       margin-left: auto;
+    }
+    .about-info .row{
+        flex-direction: column-reverse;
+    }
+    .about-info .svg-image{
+        margin: 0 auto 40px auto;
+        display: block;
+        width:50%;
+    }
+    .specialization-cards .col-md-12{
+        margin-bottom: 30px;
+    }
+    .skill-row-2{
+        padding-top: 0px;
+    }
+    .specialization-section span, 
+    .work-section span, 
+    .blog-section span {
+        margin-top:50px;
+    }
+    .specialization-cards{
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+    .work-section h2, 
+    .blog-section h2
+    {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .container-fluid{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .contact-section p {
+        font-size: 1em;
+        padding-top: 5px;
+        padding-bottom: 16px;
+    }
+    .linkedin-img, .github-img {
+        width: 40px;
+        height: 40px;
+    }
+    .twitter-img {
+        width: 50px;
+        height: 40px;
+    }    
 }
