@@ -6,6 +6,14 @@
     src:url(/fonts/Roboto-Bold.ttf);
     font-family: roboto-bold;
 }
+:root{
+    --primary-color:#FB9301;
+    --secondary-color:#523B5D;
+    --grey-color:#adadad;
+    --black-color:#1d2127;
+    --white-color:#ffffff;
+    --border-color:#E1F3EB;
+}
 body{
     font-family: roboto-regular; 
     overflow-x: hidden;
@@ -19,7 +27,7 @@ body{
 nav {
     padding-right: 30px;
     padding-left: 0px;
-    background: white;
+    background: var(--white-color);
     padding:25px 0px;
     z-index: 5;
     position: fixed;
@@ -28,11 +36,11 @@ nav {
 }
 nav a{
     font-size: 1em;
-    color: #1d2127;
+    color: var(--black-color);
     text-decoration: none;
 }
 nav a:hover{
-    color: #FB9301;
+    color: var(--primary-color);
 }
 
 .list-inline{
@@ -42,6 +50,11 @@ nav a:hover{
 .list-inline .list-inline-item{
     list-style: none;
     padding-right: 20px;
+}
+
+.list-inline-item .active{
+    color: var(--primary-color);
+    font-weight: bold;
 }
 .list-inline .list-inline-item:last-child{
     padding-right: 0px;
@@ -74,7 +87,7 @@ nav a:hover{
 .blog-section h2,
 .contact-section h1
 {
-    color:#523B5D;
+    color:var(--secondary-color);
     font-family: roboto-bold;
 }
 .specialization-heading,
@@ -93,7 +106,7 @@ nav a:hover{
 .work-section p, 
 .blog-section p
 {
-    color:#adadad;
+    color:var(--grey-color);
     font-size: 1em;
     line-height: 1.5;
     margin-top:20px;
@@ -102,9 +115,19 @@ nav a:hover{
 .project-container .project-info-card,
 .blog-container .blog-card
 {
-    width:32.3%;
+    width:27.3%;
+    padding: 30px;
+    margin-bottom: 20px;
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
 }
-
+.project-container .project-info-card,
+.blog-container .blog-card{
+    height: 174px;
+}
 .specialization-container,
 .project-container,
 .blog-container
@@ -116,7 +139,7 @@ nav a:hover{
 .work-section span,
 .blog-section span
 {
-    color: #FB9301;
+    color: var(--primary-color);
     font-size: 1em;
     font-family: 'roboto-bold';
     margin-bottom: 5px;
@@ -125,18 +148,18 @@ nav a:hover{
 }
 .about-info .button-primary, 
 .work-section .button-primary{   
-    background: #FB9301;
-    border-color: #FB9301;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
     display: grid;
     align-content: center;
     text-align: center;
-    color: #ffffff;
+    color: var(--white-color);
     text-decoration: none;
 }
 .work-section a,
 .blog-section a
 {
-    color:#1d2127;
+    color:var(--black-color);
     font-size: 1.2em;
     cursor:pointer;
 }
@@ -166,15 +189,11 @@ nav a:hover{
 /* specialization-text */
 
 .specialization-container .skill-card{
-    border-radius: 15px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border:1px solid #e4e4e4; 
     text-align: center;
-    margin-bottom: 20px;
 }
 .specialization-container .skill-card img{
     height: 70px;
+    margin: 0 auto;
 }
 .specialization-container .skill-card h2{
     font-size: 1.5em;
@@ -189,8 +208,7 @@ nav a:hover{
 
 .work-section .button-primary{
     width: 125px;
-    color: white;
-    margin-bottom: 30px;
+    color: var(--white-color);
     height: 39px;
     border-radius: 5px;
     font-size: 16px;
@@ -229,7 +247,7 @@ nav a:hover{
     font-family: roboto-bold;
     padding-top: 20px;
     padding-bottom: 20px;
-    color:#1d2127;
+    color:var(--black-color);
 }
 .contact-section{
     height: 100vh;
