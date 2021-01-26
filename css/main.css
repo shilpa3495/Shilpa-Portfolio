@@ -147,7 +147,9 @@ nav a:hover{
     display: block;
 }
 .about-info .button-primary, 
-.work-section .button-primary{   
+.work-section .button-primary,
+.blog-section .button-primary
+{   
     background: var(--primary-color);
     border-color: var(--primary-color);
     display: grid;
@@ -206,17 +208,29 @@ nav a:hover{
 
 /* work-section */
 
-.work-section .button-primary{
+.work-section .button-primary,
+.blog-section .button-primary{
     width: 125px;
     color: var(--white-color);
     height: 39px;
     border-radius: 5px;
     font-size: 16px;
 }
-
+.work-section p, 
+.index-blog-section p{
+    text-align: center;
+}
+.work-section .all-project-button, 
+.blog-section .all-blog-button{
+    margin: 0 auto;
+}
+.index-work-section h2, 
+.index-blog-section h2{
+    padding-bottom: 0px;
+}
 /* blog-section */
 
-.blog-section p{
+.blog-container p{
     min-height: 120px;
 }
 
